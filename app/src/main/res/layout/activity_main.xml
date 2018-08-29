@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/default_colour_bright"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:weightSum="1">
+
+
+    <!--Map and XY Coordinatees-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/mapView"
+            android:layout_width="525dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+        </RelativeLayout>
+
+        <!--Row Coordinates-->
+        <TextView
+            android:id="@+id/xy_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="55dp"
+            android:paddingStart="55dp"
+            android:paddingTop="15dp"
+            android:visibility="invisible"
+            android:text="19  18  17  16   15  14  13  12  11  10    9    8    7     6    5     4     3    2    1    0" />
+
+        <!--Column Coordinates-->
+        <TableLayout
+            android:id="@+id/xy_column"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:paddingEnd="60dp"
+            android:paddingTop="40dp">
+
+            <TableRow>
+
+                <TextView android:text="1" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:paddingTop="5dp"
+                    android:text="2" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:paddingTop="5dp"
+                    android:text="3" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:paddingTop="5dp"
+                    android:text="4" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:paddingTop="5dp"
+                    android:text="5" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:paddingTop="5dp"
+                    android:text="6" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView android:text="7" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:paddingTop="5dp"
+                    android:text="8" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView android:text="9" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:paddingTop="5dp"
+                    android:text="10" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:paddingTop="5dp"
+                    android:text="11" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:paddingTop="5dp"
+                    android:text="12" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:paddingTop="5dp"
+                    android:text="13" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:paddingTop="5dp"
+                    android:text="14" />
+            </TableRow>
+        </TableLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--Robot Status-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/button_layout"
+                android:layout_width="wrap_content"
+                android:text="@string/robot_status_header" />
+
+            <TextView
+                android:id="@+id/main_textview_robot_status"
+                style="@style/button_layout_inverted"
+                android:layout_width="0dp"
+                android:layout_weight="3.5"
+                android:text="@string/robot_status_stop"
+                android:background="@drawable/border"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/main_layout_frame"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.68">
+
+                <!--Main Tab-->
+                <include layout="@layout/tab_main"/>
+
+                <!--AMD Tab-->
+                <include layout="@layout/tab_amd"/>
+
+                <!--MDF Tab-->
+                <include layout="@layout/tab_mdf"/>
+
+                <!--Coordinates Tab-->
+                <include layout="@layout/tab_coordinates"/>
+
+                <!--Features Tab-->
+                <include layout="@layout/tab_features"/>
+
+                <!--Start Tab-->
+                <include layout="@layout/tab_start"/>
+            </FrameLayout>
+
+            <!--Menu Buttons (RHS)-->
+            <include layout="@layout/rhs_menu"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

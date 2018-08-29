@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout_tab_coord"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/default_colour_bright"
+    android:orientation="vertical"
+    android:visibility="invisible">
+
+    <!--Headers-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!--Robot-->
+        <TextView
+            style="@style/button_layout_sidebyside"
+            android:text="@string/coordinates_header_robot"></TextView>
+
+        <!--Divider-->
+        <View style="@style/divider_vertical_inverted"></View>
+
+        <!--Waypoint-->
+        <TextView
+            style="@style/button_layout_sidebyside"
+            android:text="@string/coordinates_header_wp"></TextView>
+    </LinearLayout>
+
+    <!--Content-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+    <!--LHS (Robot)-->
+    <TableLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <!--Instructions-->
+        <TextView
+            style="@style/text_normal"
+            android:text="@string/coordinates_instructions_robot" />
+
+        <!--Robot Picture-->
+        <ImageView
+            android:id="@+id/coord_imageview_robot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/coord_robot_0" />
+
+        <!--Row-->
+        <TableRow android:layout_marginTop="10dp">
+
+            <TextView
+                style="@style/coord_sidebyside"
+                android:layout_weight="0.8"
+                android:text="@string/coordinates_row"
+                android:textAlignment="textEnd" />
+
+            <TextView
+                android:id="@+id/coord_textview_robot_row"
+                style="@style/coord_sidebyside" />
+        </TableRow>
+        <!--Column-->
+        <TableRow>
+
+            <TextView
+                style="@style/coord_sidebyside"
+                android:layout_weight="0.8"
+                android:text="@string/coordinates_column"
+                android:textAlignment="textEnd" />
+
+            <TextView
+                android:id="@+id/coord_textview_robot_column"
+                style="@style/coord_sidebyside" />
+        </TableRow>
+        <!--Direction-->
+        <TableRow>
+
+            <TextView
+                style="@style/coord_sidebyside"
+                android:layout_weight="0.8"
+                android:text="@string/coordinates_direction"
+                android:textAlignment="textEnd" />
+
+            <Spinner
+                android:id="@+id/coord_spinner_robot_direction"
+                style="@style/coord_sidebyside"
+                android:entries="@array/direction"
+                android:spinnerMode="dropdown" />
+        </TableRow>
+
+        <!--Set and Reset-->
+        <TableRow>
+
+            <Button
+                android:id="@+id/coord_button_robot_set"
+                style="@style/button_layout_sidebyside"
+                android:text="@string/coordinates_set" />
+
+            <Button
+                android:id="@+id/coord_button_robot_reset"
+                style="@style/button_layout_sidebyside_inverted"
+                android:text="@string/coordinates_reset" />
+        </TableRow>
+    </TableLayout>
+
+    <!--Divider-->
+    <View
+        style="@style/divider_vertical"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="50dp">
+    </View>
+
+    <!--RHS (Waypoint)-->
+    <TableLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <!--Instructions-->
+        <TextView
+            style="@style/text_normal"
+            android:text="@string/coordinates_instructions_wp" />
+
+        <!--Waypoint Picture-->
+        <ImageView
+            android:id="@+id/coord_imageview_wp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/coord_wp" />
+
+        <!--Row-->
+        <TableRow android:paddingTop="5dp">
+
+            <TextView
+                style="@style/coord_sidebyside"
+                android:layout_weight="0.8"
+                android:text="@string/coordinates_row"
+                android:textAlignment="textEnd" />
+
+            <Spinner
+                android:id="@+id/coord_spinner_wp_row"
+                style="@style/coord_sidebyside"
+                android:entries="@array/coordinates_wp_column"/>
+        </TableRow>
+        <!--Column-->
+        <TableRow android:paddingBottom="30dp">
+
+            <TextView
+                style="@style/coord_sidebyside"
+                android:layout_weight="0.8"
+                android:text="@string/coordinates_column"
+                android:textAlignment="textEnd" />
+
+            <Spinner
+                android:id="@+id/coord_spinner_wp_column"
+                style="@style/coord_sidebyside"
+                android:entries="@array/coordinates_wp_row"/>/>
+        </TableRow>
+
+        <!--Set and Reset-->
+        <TableRow>
+
+            <Button
+                android:id="@+id/coord_button_wp_set"
+                style="@style/button_layout_sidebyside"
+                android:text="@string/coordinates_set" />
+
+            <!--set waypoint-->
+            <Button
+                android:id="@+id/coord_button_wp_reset"
+                style="@style/button_layout_sidebyside_inverted"
+                android:text="@string/coordinates_reset" />
+        </TableRow>
+
+    </TableLayout>
+    </LinearLayout>
+</LinearLayout>

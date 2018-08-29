@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout_tab_amd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_colour_bright"
+    android:orientation="vertical"
+    android:visibility="invisible">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--AMD Headers-->
+            <TableRow>
+                <TextView
+                    style="@style/button_layout_sidebyside"
+                    android:text="@string/amd_send"
+                    />
+
+                <View
+                    style="@style/divider_vertical_inverted">
+                </View>
+
+                <TextView
+                    style="@style/button_layout_sidebyside"
+                    android:text="@string/amd_receive" />
+            </TableRow>
+
+            <!--Displays AMD chat-->
+            <TableRow
+                android:layout_height="215dp"
+                android:layout_weight="1">
+
+                <ListView
+                    android:id="@+id/amd_listview_send"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scrollbars="vertical"
+                    android:transcriptMode="alwaysScroll"
+                    android:stackFromBottom="true"
+                    />
+
+                <View
+                    style="@style/divider_vertical"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="0dp">
+                </View>
+
+                <ListView
+                    android:id="@+id/amd_listview_receive"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scrollbars="vertical"
+                    android:transcriptMode="alwaysScroll"
+                    android:stackFromBottom="true"
+                    />
+            </TableRow>
+
+            <!--Send Text to AMD-->
+            <TableRow>
+                <EditText
+                    android:id="@+id/amd_edittext_send_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="8"
+                    android:textColor="@color/default_colour_dark" />
+
+                <Button
+                    android:id="@+id/amd_send_button"
+                    style="@style/button_layout_tabs"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="2"
+                    android:text="@string/amd_button_send" />
+            </TableRow>
+        </TableLayout>
+</LinearLayout>

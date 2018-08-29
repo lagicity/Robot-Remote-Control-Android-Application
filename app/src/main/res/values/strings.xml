@@ -1,0 +1,171 @@
+<resources>
+    <string name="app_name">Group 8</string>
+
+    <string name="not_connected">Not Connected</string>
+    <string name="non_paired">No Paired Devices</string>
+    <string name="scanning">Scanning for devices</string>
+
+    <string name="select_device">Select a device to connect</string>
+    <string name="configuration">Reconfiguration String Commands</string>
+
+    <string name="title_connected_to">Connected to </string>
+    <string name="title_connecting">Connecting...</string>
+    <string name="title_not_connected">Disconnected</string>
+
+    <string name="bt_not_enabled_leaving">Bluetooth Disabled</string>
+
+    <string-array name="direction">
+        <item>0</item>
+        <item>90</item>
+        <item>180</item>
+        <item>270</item>
+    </string-array>
+
+    <!--AppBar Menu-->
+    <string name="app_bar_bluetooth">Bluetooth</string>
+    <string name="app_bar_shortcuts">Shortcuts</string>
+    <string name="app_bar_exit">Quit</string>
+
+    <!--Robot Status-->
+    <string name="robot_status_xy_on">View XY</string>
+    <string name="robot_status_xy_off">Hide XY</string>
+    <string name="robot_status_header">Robot Status:</string>
+    <string name="robot_status_calibrate">Calibrating</string>
+    <string name="robot_status_forward">Moving Forward</string>
+    <string name="robot_status_turn_left">Turning Left</string>
+    <string name="robot_status_turn_right">Turning Right</string>
+    <string name="robot_status_reverse">Reversing</string>
+    <string name="robot_status_exploring">Exploring</string>
+    <string name="robot_status_fastest_path">Moving by Fastest Path</string>
+    <string name="robot_status_stop">Stopped</string>
+
+
+    <!--RHS Menu-->
+    <string name="rhs_main">Main</string>
+    <string name="rhs_amd">Communicate</string>
+    <string name="rhs_mdf">MDF</string>
+    <string name="rhs_coord">Coordinates</string>
+    <string name="rhs_extras">Features</string>
+    <string name="rhs_lb">Start</string>
+
+
+    <!--Main Tab-->
+    <string name="main_movement_mode">Movement Mode</string>
+    <string name="main_control_panel">Control Panel</string>
+    <string name="main_update">Manual Update</string>
+    <string name="main_shortcuts">Shortcuts</string>
+    <string name="main_f1">F1</string>
+    <string name="main_f2">F2</string>
+    <string name="main_switch_checked">Auto</string>
+    <string name="main_switch_unchecked">Manual</string>
+
+    <!--AMD Tab-->
+    <string name="amd_send">Message Sent</string>
+    <string name="amd_receive">Message Received</string>
+    <string name="amd_button_send">Send</string>
+
+    <!--MDF Tab-->
+    <string name="mdf_header_explored_obstacle">Explored + Obstacles</string>
+    <string name="mdf_header_obstacle">Obstacles Only</string>
+
+    <!--Coordinates Tab-->
+    <string name="coordinates_header_robot">Robot</string>
+    <string name="coordinates_header_wp">Waypoint</string>
+    <string name="coordinates_x_coord">X (0-15): </string>
+    <string name="coordinates_y_coord">Y (0-20): </string>
+    <string name="coordinates_instructions_robot">Drag and drop the robot.</string>
+    <string name="coordinates_instructions_wp">Select the position of the yellow box.</string>
+    <string name="coordinates_row">Row (y): </string>
+    <string name="coordinates_column">Column (x): </string>
+    <string name="coordinates_direction">Direction: </string>
+    <string name="coordinates_set">Set</string>
+    <string name="coordinates_reset">Reset</string>
+    <string name="coordinates_dnd">Touch here to start</string>
+    <string name="coordinates_out_of_bounds">Out of bounds</string>
+    <string-array name="coordinates_wp_column">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+    </string-array>
+    <string-array name="coordinates_wp_row">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+    </string-array>
+
+    <!--Start Tab-->
+    <string name="start_explore">Explore</string>
+    <string name="start_fastest">Fastest</string>
+    <string name="start_timer">00:00:00</string>
+    <string name="start_timer_reset">Reset all</string>
+    <string name="start_timer_stop">Stop Timer</string>
+
+    <!--Features Tab-->
+    <string name="features_tilt_on">On</string>
+    <string name="features_tilt_off">Off</string>
+    <string name="features_header_tilt">Tilt</string>
+    <string name="features_header_voice">Voice Control</string>
+    <string name="features_instructions_tilt">\n Tilt Forward = Move Forward \n Tilt Left = Turn Left \n Tilt Right = Turn Right \n Tilt Backwards = Turn Around (180)</string>
+    <string name="features_instructions_voice">Touch on the microphone below to control the robot via Voice. \n\n If you are unsure of what to say, touch "Shortcuts".</string>
+    <string name="features_spokentext">What you said:</string>
+    <string name="features_go_to_command">Shortcuts</string>
+
+    <!-- Shortcuts -->
+    <string name="commands_header_title">Shortcuts</string>
+    <string name="commands_text">Text Shortcuts</string>
+    <string name="commands_voice">Voice Shortcuts</string>
+    <string name="commands_header_movement">Movement</string>
+    <string name="commands_header_leaderboard">Leaderboard</string>
+    <string name="commands_header_functions">Functions</string>
+    <string name="commands_calibrate">Calibrating</string>
+    <string name="commands_forward">Forward</string>
+    <string name="commands_left">Turn Left</string>
+    <string name="commands_right">Turn Right</string>
+    <string name="commands_reverse">Reverse</string>
+    <string name="commands_send_arena">Send Arena</string>
+    <string name="commands_explore">Explore</string>
+    <string name="commands_fastest">Fastest</string>
+    <string name="commands_F1">F1</string>
+    <string name="commands_F2">F2</string>
+    <string name="commands_save">Save and Update</string>
+
+    <!-- Devices -->
+    <string name="devices_header_title">Bluetooth</string>
+    <string name="devices_paired">Paired Devices</string>
+    <string name="devices_available">Available Devices</string>
+    <string name="devices_make_discoverable">Make Discoverable</string>
+    <string name="devices_scan">Scan for Devices</string>
+    <string name="devices_none_paired">No Paired Devices</string>
+    <string name="devices_none_available">No New Devices</string>
+    <string name="devices_scanning">Scanning for devices</string>
+    <string name="devices_none_found">No New Devices</string>
+</resources>

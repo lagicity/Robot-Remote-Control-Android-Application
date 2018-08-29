@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout_tab_start"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_colour_bright"
+    android:orientation="vertical"
+    android:visibility="invisible">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--Padding-->
+        <TableRow>
+
+            <View android:layout_height="45dp" />
+        </TableRow>
+
+        <!--Explore-->
+        <TableRow>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/start_togglebutton_btn_explore"
+                    style="@style/leaderboard_button_layout"
+                    android:layout_marginStart="55dp"
+                    android:textOff="@string/start_explore"
+                    android:textOn="@string/start_timer_stop" />
+
+                <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/start_textview_timer_explore"
+                    android:layout_width="wrap_content"
+                    style="@style/leaderboard_button_layout"
+                    android:background="@color/default_colour_bright"
+                    android:text="@string/start_timer"
+                    android:textSize="18pt"
+                    android:textColor="@color/default_colour_dark" />
+            </LinearLayout>
+        </TableRow>
+
+        <!--Padding-->
+        <TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp" />
+        </TableRow>
+
+        <!--Fastest-->
+        <TableRow>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/start_togglebbutton_btn_fastest"
+                    style="@style/leaderboard_button_layout"
+                    android:layout_marginStart="55dp"
+                    android:textOff="@string/start_fastest"
+                    android:textOn="@string/start_timer_stop" />
+
+                <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/start_textview_timer_fastest"
+                    android:layout_width="wrap_content"
+                    style="@style/leaderboard_button_layout"
+                    android:background="@color/default_colour_bright"
+                    android:text="@string/start_timer"
+                    android:textSize="18pt"
+                    android:textColor="@color/default_colour_dark" />
+            </LinearLayout>
+        </TableRow>
+
+        <!--Padding-->
+        <TableRow>
+
+            <View android:layout_height="43dp" />
+        </TableRow>
+
+        <!--Reset-->
+        <Button
+            android:id="@+id/start_button_reset"
+            style="@style/button_layout"
+            android:text="@string/start_timer_reset" />
+    </TableLayout>
+</LinearLayout>

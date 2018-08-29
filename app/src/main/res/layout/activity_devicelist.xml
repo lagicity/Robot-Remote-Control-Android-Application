@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!--Header-->
+    <TextView
+        style="@style/button_layout_inverted"
+        android:text="@string/devices_header_title"
+        />
+
+    <!--Paired Devices-->
+    <TextView
+        style="@style/button_layout"
+        android:id="@+id/title_paired_devices"
+        android:text="@string/devices_paired" />
+    <ListView
+        android:id="@+id/paired_devices"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scrollbars="vertical" />
+
+    <!--Available Devices-->
+    <TextView
+        android:id="@+id/title_new_devices"
+        style="@style/button_layout"
+        android:text="@string/devices_available" />
+    <ListView
+        android:id="@+id/new_devices"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <!--Make Discoverable-->
+    <Button
+        style="@style/button_layout_inverted"
+        android:id="@+id/devices_button_discover"
+        android:text="@string/devices_make_discoverable" />
+
+    <!--Scan-->
+    <Button
+        style="@style/button_layout"
+        android:id="@+id/devices_button_scan"
+        android:text="@string/devices_scan" />
+</LinearLayout>

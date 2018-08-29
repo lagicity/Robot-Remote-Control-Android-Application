@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rhs_menu"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <Button
+            android:id="@+id/rhs_button_main"
+            style="@style/button_layout_tabs"
+            android:text="@string/rhs_main" />
+
+        <Button
+            android:id="@+id/rhs_button_amd"
+            style="@style/button_layout_tabs_inverted"
+            android:text="@string/rhs_amd" />
+
+        <Button
+            android:id="@+id/rhs_button_mdf"
+            style="@style/button_layout_tabs_inverted"
+            android:text="@string/rhs_mdf" />
+
+        <Button
+            android:id="@+id/rhs_button_coord"
+            style="@style/button_layout_tabs_inverted"
+            android:text="@string/rhs_coord" />
+
+        <Button
+            android:id="@+id/rhs_button_features"
+            style="@style/button_layout_tabs_inverted"
+            android:text="@string/rhs_extras" />
+
+        <Button
+            android:id="@+id/rhs_button_start"
+            style="@style/button_layout_tabs_inverted"
+            android:layout_marginTop="63dp"
+            android:text="@string/rhs_lb" />
+</LinearLayout>

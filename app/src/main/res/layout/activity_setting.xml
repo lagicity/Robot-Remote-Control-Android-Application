@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!--Title Header-->
+    <TextView
+        style="@style/button_layout"
+        android:text="@string/commands_header_title" />
+
+    <!--Text Shortcuts Header-->
+    <TextView
+        style="@style/text_header"
+        android:text="@string/commands_text"
+        android:layout_marginTop="@dimen/activity_vertical_margin">
+    </TextView>
+
+    <!--Main Body-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!--LHS (Movement)-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!--Header-->
+            <TextView
+                style="@style/text_header"
+                android:text="@string/commands_header_movement"
+                />
+
+            <!--Move Forward-->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    style="@style/string_shortcuts_view"
+                    android:text="@string/commands_forward"/>
+
+                <EditText
+                    android:id="@+id/shortcut_edittext_up"
+                    style="@style/string_shortcuts_view" />
+            </TableRow>
+
+            <!--Turn Left-->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    style="@style/string_shortcuts_view"
+                    android:text="@string/commands_left"
+                    />
+
+                <EditText
+                    android:id="@+id/shortcut_edittext_left"
+                    style="@style/string_shortcuts_view" />
+            </TableRow>
+
+            <!--Turn Right-->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    style="@style/string_shortcuts_view"
+                    android:text="@string/commands_right"
+                    />
+
+                <EditText
+                    android:id="@+id/shortcut_edittext_right"
+                    style="@style/string_shortcuts_view" />
+            </TableRow>
+
+            <!--Reverse-->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    style="@style/string_shortcuts_view"
+                    android:text="@string/commands_reverse"
+                    />
+
+                <EditText
+                    android:id="@+id/shortcut_edittext_reverse"
+                    style="@style/string_shortcuts_view" />
+            </TableRow>
+        </LinearLayout>
+
+        <!--RHS (Leaderboard and Functions)-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5.5"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--Leaderboard Header-->
+                <TextView
+                        style="@style/text_header"
+                        android:text="@string/commands_header_leaderboard"/>
+
+                <!--Explore-->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        style="@style/string_shortcuts_view"
+                        android:text="@string/commands_explore"
+                        />
+
+                    <EditText
+                        android:id="@+id/shortcut_edittext_explore"
+                        style="@style/string_shortcuts_view" />
+                </TableRow>
+
+                <!--Fastest-->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        style="@style/string_shortcuts_view"
+                        android:text="@string/commands_fastest"
+                        />
+
+                    <EditText
+                        android:id="@+id/shortcut_edittext_fastest"
+                        style="@style/string_shortcuts_view" />
+                </TableRow>
+
+                <!--Functions Header-->
+                <TextView
+                    style="@style/text_header"
+                    android:text="@string/commands_header_functions"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:paddingBottom="@dimen/activity_vertical_margin"/>
+
+                <!--F1-->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        style="@style/string_shortcuts_view"
+                        android:text="@string/commands_F1"/>
+
+                    <EditText
+                        android:id="@+id/shortcut_edittext_f1"
+                        style="@style/string_shortcuts_view" />
+                </TableRow>
+
+                <!--F2-->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        style="@style/string_shortcuts_view"
+                        android:text="@string/commands_F2"
+                        />
+
+                    <EditText
+                        android:id="@+id/shortcut_edittext_f2"
+                        style="@style/string_shortcuts_view" />
+                </TableRow>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--Padding-->
+    <View style="@style/padding_h_20" />
+
+    <!--Voice Shortcuts Header-->
+    <TextView
+        style="@style/text_header"
+        android:text="@string/commands_voice">
+    </TextView>
+
+    <!--Main Body-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!--LHS (Movement)-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!--Header-->
+            <TextView
+                style="@style/text_header"
+                android:text="@string/commands_header_movement"
+                />
+
+            <!--Move Forward-->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    style="@style/string_shortcuts_view"
+                    android:text="@string/commands_forward"/>
+
+                <EditText
+                    android:id="@+id/shortcut_edittext_up_voice"
+                    style="@style/string_shortcuts_view" />
+            </TableRow>
+
+            <!--Turn Left-->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    style="@style/string_shortcuts_view"
+                    android:text="@string/commands_left"
+                    />
+
+                <EditText
+                    android:id="@+id/shortcut_edittext_left_voice"
+                    style="@style/string_shortcuts_view" />
+            </TableRow>
+
+            <!--Turn Right-->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    style="@style/string_shortcuts_view"
+                    android:text="@string/commands_right"
+                    />
+
+                <EditText
+                    android:id="@+id/shortcut_edittext_right_voice"
+                    style="@style/string_shortcuts_view" />
+            </TableRow>
+
+            <!--Reverse-->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    style="@style/string_shortcuts_view"
+                    android:text="@string/commands_reverse"
+                    />
+
+                <EditText
+                    android:id="@+id/shortcut_edittext_reverse_voice"
+                    style="@style/string_shortcuts_view" />
+            </TableRow>
+        </LinearLayout>
+
+        <!--RHS (Leaderboard and Functions)-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5.5"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--Leaderboard Header-->
+                <TextView
+                    style="@style/text_header"
+                    android:text="@string/commands_header_leaderboard"/>
+
+                <!--Explore-->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        style="@style/string_shortcuts_view"
+                        android:text="@string/commands_explore"
+                        />
+
+                    <EditText
+                        android:id="@+id/shortcut_edittext_explore_voice"
+                        style="@style/string_shortcuts_view" />
+                </TableRow>
+
+                <!--Fastest-->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        style="@style/string_shortcuts_view"
+                        android:text="@string/commands_fastest"
+                        />
+
+                    <EditText
+                        android:id="@+id/shortcut_edittext_fastest_voice"
+                        style="@style/string_shortcuts_view" />
+                </TableRow>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--Padding-->
+    <View style="@style/padding_h_20" />
+
+    <!--Save Button-->
+    <Button
+        android:id="@+id/shortcut_button_save"
+        style="@style/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/commands_save" />
+</LinearLayout>

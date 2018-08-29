@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress AndroidDomInspection -->
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/connect_devices"
+        android:icon="@drawable/ic_bluetooth_searching_white_24dp"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/app_bar_bluetooth"
+        tools:ignore="AppCompatResource" />
+
+    <item android:id="@+id/my_setting"
+        android:icon="@drawable/ic_settings_white_24dp"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/app_bar_shortcuts"
+        tools:ignore="AppCompatResource" />
+
+    <item android:id="@+id/exit"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_power_settings_new_white_24dp"
+        android:title="@string/app_bar_exit"
+        tools:ignore="AppCompatResource" />
+</menu>
